@@ -1,6 +1,6 @@
 const postsContainer = document.querySelector('.posts-grid');
 const bcontentFolder = 'bcontent/';
-const postFilenames = ['post1.html', 'post2.html', 'post3.html', 'post4.html', 'post5.html', 'post6.html']; // Add your filenames here
+const postFilenames = ['post1.html', 'post2.html', 'post3.html', 'post4.html', 'post5.html', 'post6.html', 'post7.html', 'post8.html', 'post9.html']; // Add your filenames here
 
 function loadPosts() {
   postFilenames.forEach(filename => {
@@ -24,3 +24,4 @@ function loadPosts() {
 }
 
 window.addEventListener('load', loadPosts);
+
