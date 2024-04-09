@@ -97,6 +97,6 @@ footer {
 /* mouse hover */
 
 .read-more:hover { 
-  background-color: #23272b; /* Slightly darker on hover */
+  background-color: #23272bcb; /* Slightly darker on hover */
   cursor: pointer; /* Indicate that it's clickable */
 }
