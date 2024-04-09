@@ -1,0 +1,62 @@
+/* Basic Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  line-height: 1.6; 
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #343a40; 
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Space between logo and navigation */
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 25px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: #aaa; 
+  text-align: center;
+  padding: 20px 0; 
+}
+
+/* Media Queries for Responsiveness (Adjust breakpoints as needed) */
+@media screen and (max-width: 768px) {
+  /* Add styles to change the layout for smaller screens here. 
+     Likely involve the hamburger menu as discussed before */
+} 
