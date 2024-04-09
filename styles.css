@@ -60,3 +60,31 @@ footer {
   /* Add styles to change the layout for smaller screens here. 
      Likely involve the hamburger menu as discussed before */
 } 
+
+/* styles for blog rectangle*/
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column behavior */
+  gap: 30px;
+}
+
+.post {
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.post h2 {
+  margin-top: 0; 
+}
+
+.read-more {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #343a40; /* Match your header color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}
