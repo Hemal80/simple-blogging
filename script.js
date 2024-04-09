@@ -1,16 +1,26 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('nav');
-const header = document.querySelector('header');
+const postsContainer = document.querySelector('.posts-grid');
+const bcontentFolder = 'bcontent/';
+const postFilenames = ['post1.html', 'post2.html', 'post3.html', 'post4.html', 'post5.html', 'post6.html']; // Add your filenames here
 
-menuToggle.addEventListener('click', () => {
-  nav.classList.toggle('open');
-});
+function loadPosts() {
+  postFilenames.forEach(filename => {
+    fetch(`${bcontentFolder}${filename}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Could not fetch ${filename}`);
+        }
+        return response.text();
+      })
+      .then(postContent => {
+        const postElement = document.createElement('article');
+        postElement.classList.add('post');
+        postElement.innerHTML = postContent;
+        postsContainer.appendChild(postElement);
+      })
+      .catch(error => {
+        console.error(`Error loading ${filename}:`, error);
+      });
+  });
+}
 
-// Color change on scroll
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
+window.addEventListener('load', loadPosts);
