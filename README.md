@@ -1,6 +1,6 @@
-# simple-blogging
-A simple blogging website make by me and everyone.
+# Like to read
+A simple blogging website made by me and everyone else.
 <br>
 Let's build a world where we can find content 😁
 <br>
-Just kidding. Enjoy this tamplate if you like.
+Just kidding. Enjoy this template if you like.
